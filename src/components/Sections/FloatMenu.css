@@ -1,0 +1,85 @@
+@keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+}
+
+
+.floatMenu{
+    padding: 30px 15px;
+    border-radius: 50px;
+    position: fixed;
+    left: 25px;
+    top: 560px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.floatMenu,
+.floatMenu:hover .menuLabel p,
+.inputMenu:checked ~  p{
+    background-color: rgba(255,255,255,0.4);
+    backdrop-filter: blur(10px);
+}
+
+
+.menuLabel{
+    display: flex;
+}
+
+.inputMenu{
+    display: none;
+}
+
+.menuLabel p{
+    display: flex;
+    color:white;
+    line-height: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    width: 0px;
+    height: 35px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0);
+    left: 90px;
+    border-radius: 30px 30px 30px 30px;
+    transition: all 300ms cubic-bezier(.27,.31,0,1.19);
+    
+}
+
+.inputMenu:checked ~  p,
+.floatMenu:hover .menuLabel p{
+    width: auto;
+    border-radius: 0px 30px 30px 0px;
+    padding-right: 15px;
+    left: 55px;
+    animation: gelatine 300ms ;
+}
+
+.inputMenu:checked ~  p{
+    color: #824E50;
+}
+
+.inputMenu:checked ~ svg{
+    fill: #824E50;
+}
+
+.menuLabel svg{
+    width: 25px;
+    height: 25px;
+    fill: white;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: all 300ms ease-in;
+}
+
+.menuLabel svg:hover{
+    transform: scale(1.2);
+}

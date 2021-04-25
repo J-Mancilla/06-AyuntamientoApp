@@ -1,0 +1,80 @@
+
+
+
+.sapaSection{
+    width: 100%;
+    position: relative;
+}
+
+.sapaSection .cont{
+    float: left;
+    position: relative;
+    top: -30px;
+    width: 50%;
+    padding: 150px 25%;
+    color: white;
+    background-color: #B4ACAC;
+}
+
+.sapaSection .backSec{
+    width: 100%;
+    height: 1080px;
+    display: grid;
+    place-content: center;
+    position: relative;
+    float: left;
+    bottom: 150px;
+    overflow: hidden;
+    margin-bottom: -150px;
+}
+
+.sapaSection .backSec .circle::before{
+    content: "";
+    position: absolute;
+    background-image: url("../../../img/ondas.svg");
+    top: 434px;
+    left: -828px;
+    width: 2668px;
+    height: 369px;
+    z-index: -1;
+}
+
+.sapaSection .backSec .circle{
+    position: absolute;
+    top: 51px;
+    left: 514px;
+    width: 984px;
+    height: 984px;
+    background: #B19793;
+    border-radius: 50%;
+    animation: inZoom 1.3s ;
+}
+
+.sapaSection .backSec .image{
+    position: absolute;
+    top: 89px;
+    left: 413px;
+    width: 552px;
+    height: 1049px;
+    background: transparent url('../../../img/personSapa.png') no-repeat padding-box;
+    background-size: cover;
+    animation: inRight 1s ;
+}
+
+.sapaSection .backSec h4{
+    position: absolute;
+    top: 530px;
+    left: 751px;
+    font: normal normal bold 45px Roboto;
+    color: #FFFFFF;
+    animation: inRight 1.1s ;
+}
+
+.sapaSection .backSec h3{
+    position: absolute;
+    left: 824px;
+    text-align: left;
+    font: normal normal bold 300px Roboto;
+    color: #FFFFFF;
+    animation: inLeft 1.3s ;
+}

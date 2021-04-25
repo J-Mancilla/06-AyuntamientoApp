@@ -1,0 +1,24 @@
+
+
+
+.linkButton{
+    font-size: 13px;
+    padding: 10px 10px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.6);
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.linkButton:hover{   
+    color: white;
+    position: relative;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 15px;
+    
+}
+
+
+.boldLinkButton{
+    color: rgba(255,255,255,0.8);
+}

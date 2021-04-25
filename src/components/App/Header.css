@@ -1,0 +1,33 @@
+
+
+header{
+    width: 70%;
+    height: 200px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0px 15%;
+    z-index: 1000;
+}
+
+
+header .logo{
+    background-image: url(../../img/logoMC.png);
+    width: 20%;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+}
+
+.btnsHead{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
