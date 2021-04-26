@@ -1,8 +1,17 @@
 
 
 
-.obrasPublicas{
+.obrasSection{
     width: 100%;
-    display: grid;
-    place-content: center;
+    position: relative;
+}
+
+.obrasSection .cont{
+    float: left;
+    position: relative;
+    top: -15px;
+    width: 50%;
+    padding: 150px 25%;
+    color: white;
+    background-color: #B4ACAC;
 }
