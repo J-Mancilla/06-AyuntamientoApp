@@ -18,51 +18,31 @@ const ObrasPublicas = () => (
 
 const styles = {
     container: {
-        width:        '100%',
-        height:       '800px',
-        display:      'grid',
-        placeContent: 'center',
-        position:     'relative',
-        float:        'left',
         bottom:       '120px',
-        overflow:     'hidden',
-        marginBottom: '-120px',
+        marginBottom: '-120px'
     },
     background: {
-        position:         'absolute',
         top:              '66px',
         left:             '576px',
         width:            '758px',
         height:           '622px',
-        backgroundRepeat: 'no-repeat',
         backgroundImage:  `url(${backImg})`
     },
     tit: {
-        position:  'absolute',
         bottom:    '130px',
         left:      '425px',
-        textAlign: 'left',
-        font:      'normal normal bold 241px Roboto',
-        color:     '#FFFFFF',
-        animation: 'inLeft 500ms' 
+        font:      'normal normal bold 241px Roboto'
     },
     sub: {
-        position:  'absolute',
         top:       '190px',
         left:      '554px',
         font:      'normal normal bold 129px Roboto',
-        color:     '#FFFFFF',
-        animation: 'inRight 400ms' 
     },
     img: {
-        position:         'absolute',
         left:             '932px',
         width:            '564px',
         height:           '800px',
-        backgroundImage:  `url(${img})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize:   'contain',
-        animation:        'inRight 300ms' 
+        backgroundImage:  `url(${img})`
     }
 }
 

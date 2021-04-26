@@ -17,25 +17,16 @@ const SAPA = () => (
 
 const styles = {
     container: {
-        width:        '100%',
-        height:       '800px',
-        display:      'grid',
-        placeContent: 'center',
-        position:     'relative',
-        float:        'left',
         bottom:       '150px',
-        overflow:     'hidden',
         marginBottom: '-150px'
     },
     background: {
-        position:     'absolute',
         top:          '82px',
         left:         '614px',
         width:        '702px',
         height:       '702px',
         background:   '#B19793',
         borderRadius: '50%',
-        animation:    'inZoom 500ms',
         '&::after':  {
             content:         '""',
             position:        'absolute',
@@ -48,32 +39,21 @@ const styles = {
         }
     },
     tit: {
-        position:  'absolute',
         top:       '70px',
         left:      '835px',
-        textAlign: 'left',
         font:      'normal normal bold 213px Roboto',
-        color:     '#FFFFFF',
-        animation: 'inLeft 500ms'
     },
     sub: {
-        position:  'absolute',
         top:       '440px',
         left:      '780px',
-        font:      'normal normal bold 32px Roboto',
-        color:     '#FFFFFF',
-        animation: 'inRight 400ms'
+        font:      'normal normal bold 32px Roboto'
     },
     img: {
-        position:         'absolute',
         top:              '109px',
         left:             '542px',
         width:            '394px',
         height:           '749px',
-        backgroundRepeat: 'no-repeat',
         backgroundImage:  `url(${img})`,
-        backgroundSize:   'contain',
-        animation:        'inRight 300ms'
     }
 }
 
